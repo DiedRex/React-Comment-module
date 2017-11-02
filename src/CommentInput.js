@@ -40,7 +40,7 @@ class CommentInput extends Component{
 				<div className='comment-field'>
 					<span className='comment-field-name'>用户名：</span>
 					<div className='comment-field-input'>
-						<input
+						<input id='text'
 							value={this.state.username}
 							onChange={this.handleUsernameChange.bind(this)} />
 					</div>
@@ -48,7 +48,7 @@ class CommentInput extends Component{
 				<div className='comment-field'>
 					<span className='comment-field-name'>评论内容：</span>
 					<div className='comment-field-input'>
-						<textarea
+						<textarea id='textarea'
 							value={this.state.content}
 							onChange={this.handleContentChange.bind(this)} />
 					</div>
